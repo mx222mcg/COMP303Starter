@@ -7,9 +7,17 @@ import java.util.Map;
  * Represents a company that owns and operates
  * one or more grocery stores, each with its own inventory.
  */
-public class Corporation
+public final class Corporation
 {
 	private Map<String, Inventory> aInventories = new HashMap<String, Inventory>();
+	private final Corporation INSTANCE = new Corporation();
+	
+	private Corporation(){}
+	
+	public Corporation getInstance()
+	{
+		return INSTANCE;
+	}
 	
 	/**
 	 * @param pInventory An inventory to add to the corporation.
