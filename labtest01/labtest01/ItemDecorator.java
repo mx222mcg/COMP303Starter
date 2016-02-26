@@ -4,18 +4,24 @@ public class ItemDecorator implements ItemInterface
 {
 	private Item aDecorated;
 	
+	/**
+	 * Item constructor
+	 */
 	public ItemDecorator(Item pItem)
 	{
 		aDecorated = pItem;
 	}
 	
+	/**
+	 * @return item name
+	 */
 	public String getName()
 	{
 		return "Item - " + aDecorated.getName();
 	}
 	
 	/**
-	 * 
+	 * @return price of item
 	 */
 	public int getPrice()
 	{
@@ -23,7 +29,7 @@ public class ItemDecorator implements ItemInterface
 	}
 	
 	/**
-	 * 
+	 * @return Id of item
 	 */
 	public int getId()
 	{

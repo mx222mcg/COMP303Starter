@@ -5,6 +5,11 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * 
+ * @author mchamp33
+ * Test class for ItemDecorator getName
+ */
 public class TestItemDecorator
 {
 	Item aItem;
