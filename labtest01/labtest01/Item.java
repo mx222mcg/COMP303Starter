@@ -7,7 +7,7 @@ import java.util.Comparator;
  * Jar of peanut butter, package of pasta,
  * whatever.
  */
-public class Item
+public class Item implements ItemInterface
 {
 	private final String aName;
 	private final int aId;
