@@ -79,6 +79,10 @@ public class Inventory
 		}
 	}
 	
+	/**
+	 * Calculates total value of inventory.
+	 * @return int total value
+	 */
 	public int totalValue()
 	{
 		int total = 0;

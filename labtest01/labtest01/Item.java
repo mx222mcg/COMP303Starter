@@ -50,6 +50,10 @@ public class Item implements ItemInterface
 		return aPrice;
 	}
 	
+	/**
+	 * Compares two items
+	 * @return positive or negative int
+	 */
 	public static Comparator<Item> byPriceComparator()
 	{
 		return new Comparator<Item>()
